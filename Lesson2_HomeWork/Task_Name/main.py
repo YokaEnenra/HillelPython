@@ -1,13 +1,10 @@
 def pr(a):
     if(a==1):
-        tmp = " "
-        return tmp
+        return " "
     elif(a==2):
-        tmp = "  "
-        return tmp
+        return "  "
     else:
-        tmp = "   "
-        return tmp
+        return "   "
 
 print("My Name Is:", "\n\r"+pr(3)+"**"+pr(3)+"*****"+pr(2)*2+"***"+pr(3)+"****\n\r"+pr(3)+"**"
       +pr(2)+"*"+pr(3)+pr(2)+"*"+pr(2)+"*"+pr(3)+"*"+pr(2)+"*"+pr(3)+"*\n\r"+pr(1)+"**"+pr(1)+"*"
