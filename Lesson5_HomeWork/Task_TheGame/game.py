@@ -3,7 +3,8 @@ import random
 print(
     'Приветствую вас в игре "Угадайка", я загадаю число от 1 до 100, а вы должны угадать это число, я буду давать '
     'подсказки')
-while True:
+is_game=True
+while is_game:
     is_win = False
     right_answer = random.randint(1, 100)
     loose_counter = 1
@@ -16,7 +17,7 @@ while True:
             elif right_answer == usr_answer:
                 print("Ты угадал, победа за тобой, это заняло у тебя", loose_counter,
                       "попыток, а правильным числом было", right_answer)
-                break
+                is_win=True
             else:
                 if usr_answer > right_answer:
                     print("Твое число больше, чем то, что я загадал")
@@ -30,9 +31,9 @@ while True:
     usr_answer = input()
     if usr_answer == 'n':
         print("Ок, завершаю работу")
-        break
+        is_game=False
     elif usr_answer != 'n' and usr_answer != 'y':
         print('Не хотел играть, написал бы "n", зачем билиберду писать')
-        break
+        is_game = False
     else:
         print("Ок, продолжаем")
