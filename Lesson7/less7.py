@@ -29,15 +29,15 @@
 
 
 # Попытка в двумерный массив
-# a=int(input())
-# b=int(input())
-# arr=[[]]
-# arr*=a
-# for i in range(0,a-1):
-#     arr[i]=[]*b
-# for i in range(a):
-#     for j in range(b):
-#         arr[i][j] =int(input)
+a=int(input())
+b=int(input())
+arr=[[]]
+arr*=a
+for i in range(0,a-1):
+    arr[i]=[]*b
+for i in range(a):
+    for j in range(b):
+        arr[i][j] =int(input)
 
 
 #
@@ -47,5 +47,10 @@
 
 
 # Кортежи
-t=(5,)
-print(type(t))
+# t=(5,)
+# print(type(t))
+
+# a=(1,2,3,4,5,6)
+# b=[1,2,3,4,5,6]
+# print(a.__sizeof__())
+# print(b.__sizeof__())
