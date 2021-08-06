@@ -29,15 +29,17 @@
 
 
 # Попытка в двумерный массив
-a=int(input())
-b=int(input())
-arr=[[]]
-arr*=a
-for i in range(0,a-1):
-    arr[i]=[]*b
-for i in range(a):
-    for j in range(b):
-        arr[i][j] =int(input)
+# a=int(input())
+# b=int(input())
+# arr=list()
+# for i in range(0,a-1):
+#     arr[i].[0]*b
+# print(arr)
+# for i in range(a):
+#     for j in range(b):
+#         arr[i][j].append(int(input))
+
+
 
 
 #
