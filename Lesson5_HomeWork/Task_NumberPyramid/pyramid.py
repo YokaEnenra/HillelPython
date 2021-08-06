@@ -10,11 +10,10 @@ try:
         raise NonRangeNumber
     for i in range(1, int_pyramid_middle + 1):
         result_pyramid = ""
-        for j in range(0, i):
+        for j in range(1, i):
             result_pyramid += str(j)
         for k in range(i, 0, -1):
             result_pyramid += str(k)
-        result_pyramid = result_pyramid.replace(result_pyramid[0], '')
         print(result_pyramid)
 
 except NonRangeNumber:
