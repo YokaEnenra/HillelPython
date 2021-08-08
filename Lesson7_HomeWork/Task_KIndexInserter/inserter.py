@@ -33,20 +33,20 @@ try:
     while not is_insert:
         print("Укажите индекс куда вы желаете вставить значение")
         insert_index = int(input()) - 1
-        if insert_index <= len(arr):
-            print("Укажите вставляемое значение")
-            insert_elem = input()
+        print("Укажите вставляемое значение")
+        insert_elem = input()
+        try:
+            insert_elem = int(insert_elem)
+        except ValueError:
             try:
-                insert_elem = int(insert_elem)
+                insert_elem = float(insert_elem)
             except ValueError:
-                try:
-                    insert_elem = float(insert_elem)
-                except ValueError:
-                    print("Вы ввели не число")
-
-                is_insert = inserter(insert_index, arr, insert_elem)
-                for j in enumerate(arr):
-                    print(j)
+                print("Вы ввели не число")
+                continue
+        if insert_index <= len(arr):
+            is_insert = inserter(insert_index, arr, insert_elem)
+            for j in enumerate(arr):
+                print(j)
         else:
             print("Указанный индекс слишком велик, в массиве нет такого елемента")
 
