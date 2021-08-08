@@ -1,1 +1,0 @@
-This dir serves to store my sixth HomeWork.
