@@ -6,7 +6,7 @@ print("Приветствую вас в программе постройки п
 try:
     pyramid_middle = input()
     int_pyramid_middle = int(pyramid_middle)
-    if 3 > int_pyramid_middle or int_pyramid_middle > 9:
+    if int_pyramid_middle not in range(3, 10):
         raise NonRangeNumber
     for i in range(1, int_pyramid_middle + 1):
         result_pyramid = ""
