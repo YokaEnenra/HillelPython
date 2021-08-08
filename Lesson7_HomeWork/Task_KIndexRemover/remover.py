@@ -15,11 +15,11 @@ try:
         try:
             arr.append(int(number))
             i += 1
-        except:
+        except ValueError:
             try:
                 arr.append(float(number))
                 i += 1
-            except:
+            except ValueError:
                 print("Вы ввели не число")
     is_rmv = False
     while not is_rmv:
@@ -32,5 +32,5 @@ try:
         else:
             print("Указанный индекс слишком велик, в массиве нет такого елемента")
 
-except:
+except ValueError:
     print("Вы ввели не число или дробное число")
