@@ -32,7 +32,7 @@
 # a=int(input())
 # b=int(input())
 # arr=list()
-# for i in range(0,a-1):
+# for i in range(0):
 #     arr[i].[0]*b
 # print(arr)
 # for i in range(a):
