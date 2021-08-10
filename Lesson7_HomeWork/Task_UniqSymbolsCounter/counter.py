@@ -5,7 +5,6 @@ list1 = [random.randint(-10, 10) for i in range(10)]
 list2 = [random.randint(-10, 10) for j in range(10)]
 # list1 = [input("Элемент:") for j in range(5)]
 # list2 = [input("Элемент:") for i in range(5)]
-# (k in list1 == 1 and k not in list2) or (k in list2 == 1 and k not in list1)
 uniq_list = [k for k in list1 + list2 if list1.count(k)+list2.count(k) == 1]
 # uniq_list = list()
 # for k in list1+list2:
