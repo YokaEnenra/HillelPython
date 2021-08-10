@@ -1,12 +1,12 @@
 def inserter(index, array, elem):
     for i in range(len(array) - 1, index - 1, -1):
-        if (i == len(array) - 1):
+        if i == len(array) - 1:
             array.append(array[i])
             if i == index:
                 array[i] = elem
             else:
                 array[i] = array[i - 1]
-        elif (i == index):
+        elif i == index:
             array[i] = elem
         else:
             array[i] = array[i - 1]
