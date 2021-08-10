@@ -56,3 +56,15 @@
 # b=[1,2,3,4,5,6]
 # print(a.__sizeof__())
 # print(b.__sizeof__())
+
+# Нормальный двоичный массив
+row=int(input('rows: '))
+column=int(input('columns: '))
+arr = []
+
+for i in range(row):
+    arr.append(list())
+    for j in range(column):
+        arr[i].append(int(input("next element:")))
+
+print(arr)
