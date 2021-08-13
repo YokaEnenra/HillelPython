@@ -1,0 +1,2 @@
+There is first part of my seventh homework.
+My task was to create program that will ask user number of elements, than create random list and then give user an answer how much different elements is in that list.
