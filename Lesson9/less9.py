@@ -6,7 +6,7 @@
 # hello = hi
 # hello()
 
-# def func(*args):  # Ф-кция принимает список
+# def func(*args):  # Ф-кция принимает кортеж(tuple)
 #     print(args)
 #     return args
 #
