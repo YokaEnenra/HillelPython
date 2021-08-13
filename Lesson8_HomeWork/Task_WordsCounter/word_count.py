@@ -11,5 +11,5 @@ for i in range(len(my_list)):
 for i in range(len(my_list)):
     if my_list[i] not in my_dict:
         counter = my_list.count(my_list[i])
-        my_dict.update({counter: my_list[i]})
-print('Все слова в переданном тексте посчитаны сейчас я выведу результат в формате "кол-во раз:слово"\n', my_dict)
+        my_dict.update({my_list[i]: counter})
+print('Все слова в переданном тексте посчитаны сейчас я выведу результат в формате "слово: кол-во раз"\n', my_dict)
