@@ -1,10 +1,19 @@
-# def hi():
+# def hi(a, b=1, c='n'):
+#     """ Печатает hi"""  # Описание ф-кции
+#     print('hi')
+#
+#
+# def hi(a, d, c='n'):
 #     """ Печатает hi"""  # Описание ф-кции
 #     print('hi')
 #
 #
 # hello = hi
 # hello()
+# print(id(hello))
+# print(id(hi))
+# print(type(hello))
+# print(type(hi))
 
 # def func(*args):  # Ф-кция принимает кортеж(tuple)
 #     print(args)
@@ -36,15 +45,15 @@
 # print(f3(1, 2, 3))
 # print('*'*20)
 
-def gen_f(x, y):
-    for i in range(1, x+1):
-        yield i**y
-
-
-# for n in gen_f(15, 3):
-#     print(n, end=' ')
-f = gen_f(4, 2)
-print(f.__next__())
-print(f.__next__())
-print(f.__next__())
-print(f.__next__())
+# def gen_f(x, y):
+#     for i in range(1, x+1):
+#         yield i**y
+#
+#
+# # for n in gen_f(15, 3):
+# #     print(n, end=' ')
+# f = gen_f(4, 2)
+# print(f.__next__())
+# print(f.__next__())
+# print(f.__next__())
+# print(f.__next__())
