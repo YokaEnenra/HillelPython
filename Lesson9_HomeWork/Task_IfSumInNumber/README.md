@@ -1,0 +1,2 @@
+There is first part of my seventh homework.
+My task was to create program that will ask user a list of numbers and a single number and then give him an answer if there is two numbers in list sum of which is single number, using self-writen function.
