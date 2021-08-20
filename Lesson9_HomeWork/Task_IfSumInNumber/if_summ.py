@@ -21,5 +21,5 @@ while is_working:
         print('Перепроверим с новыми данными?; "y-да", "n-нет"')
         if input() == 'n':
             is_working = False
-    except:
+    except ValueError:
         print("Вы ввели не число или дробное число")

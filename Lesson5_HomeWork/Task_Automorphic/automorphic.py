@@ -11,12 +11,12 @@ try:
         count = 0
         n = 0
         for j in range(len_pow - len_i, len_pow):
-            if (str_pow[j] == str_i[n]):
+            if str_pow[j] == str_i[n]:
                 count += 1
                 n += 1
             else:
                 break
-        if (count == len_i):
+        if count == len_i:
             print(i, "*", i, "=", pow_i)
-except:
+except ValueError:
     print("Твое число", str_number, "не является натуральным или вообще не число")

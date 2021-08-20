@@ -18,5 +18,5 @@ try:
 
 except NonRangeNumber:
     print("Ваше число не входит в допустимый диапазон чисел")
-except:
+except ValueError:
     print("Ваше число не натуральное или не число вовсе")

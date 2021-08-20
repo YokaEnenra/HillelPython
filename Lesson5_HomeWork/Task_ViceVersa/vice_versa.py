@@ -8,5 +8,5 @@ try:
     new_first_word = new_first_word.lower()
     new_first_word = new_first_word.replace(new_first_word[0],new_first_word[0].upper())
     print('"' + new_second_word, new_first_word + '"')
-except:
+except ValueError:
     print("Кажется ты ввел меньше двух слов")

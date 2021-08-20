@@ -1,15 +1,15 @@
 def inserter(index, array, elem):
-    for i in range(len(array) - 1, index - 1, -1):
-        if i == len(array) - 1:
-            array.append(array[i])
-            if i == index:
-                array[i] = elem
+    for k in range(len(array) - 1, index - 1, -1):
+        if k == len(array) - 1:
+            array.append(array[k])
+            if k == index:
+                array[k] = elem
             else:
-                array[i] = array[i - 1]
-        elif i == index:
-            array[i] = elem
+                array[k] = array[k - 1]
+        elif k == index:
+            array[k] = elem
         else:
-            array[i] = array[i - 1]
+            array[k] = array[k - 1]
     return True
 
 

@@ -19,5 +19,5 @@ for i in my_dict:
         biggest_amount = biggest_amount.clear()
         biggest_amount = {i: my_dict.get(i)}
         biggest_amount_key = i
-print('Слово встречающееся в полученном тексте больше всего раз найдено, я выведу его в формате "слово: кол-во раз"\n'
-      , biggest_amount)
+print('Слово встречающееся в полученном тексте больше всего раз найдено, я выведу его в формате "слово: кол-во раз"\n',
+      biggest_amount)
