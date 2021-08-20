@@ -1,3 +1,4 @@
+#quick-sort
 def partition(arr, low, high):
     pivot = arr[(low + high) // 2]
     i = low - 1
