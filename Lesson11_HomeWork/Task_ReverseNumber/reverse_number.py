@@ -1,11 +1,11 @@
-import math
+from math import log10
 
 
 def reverse_it(n: int) -> int:
     if n > 10:
         current_number = n % 10
         not_reversed_numbers = n // 10
-        degree_counter = int(math.log10(not_reversed_numbers) + 1)
+        degree_counter = int(log10(not_reversed_numbers) + 1)
 
         return current_number * 10 ** degree_counter + reverse_it(not_reversed_numbers)
     else:
