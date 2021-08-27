@@ -1,5 +1,5 @@
 def random_generate(gen_from: int = 1, gen_to: int = 100):
-    for k in range(gen_from, gen_to):
+    for k in range(gen_from, gen_to+1):
         for n in range(2, round(k ** 0.5) + 1):
             if k % n == 0:
                 break
