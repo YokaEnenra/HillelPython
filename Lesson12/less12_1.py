@@ -15,3 +15,12 @@ print(sys.path)
 # C:\folder1
 # C:\folder2
 # C:\folderN
+# Варианты подключения пакетов:
+# from my_package import *
+# Каталоги разделяются точками
+# from my_package.sub_package import *
+#
+# Чтобы поключить модуль распооженный в той же папке внутри пакета можно использовать относительный импорт:
+# from . import module2
+# Или указать полный путь относительно корниевого каталога
+# import folder1.folder2.module2 as module2
