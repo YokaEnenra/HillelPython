@@ -1,2 +1,2 @@
-There is first, compulsory part of my seventh homework.
+There is first, compulsory part of my ninth homework.
 My task was to create program that will ask user a number than create two-dimensional array number*number than sort its columns by sum of their elements, after that sort each odd column by ascending its elements upwards and each even column by ascending its elements downwards, using self-writen functions.
