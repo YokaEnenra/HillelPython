@@ -40,8 +40,6 @@
 #         arr[i][j].append(int(input))
 
 
-
-
 #
 # list=[1,4,5,6,7]
 # my_expr=(i for i in list if i%2==0)
