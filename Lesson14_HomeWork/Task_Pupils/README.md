@@ -1,0 +1,2 @@
+There is first part of my thirteenth homework.
+My task was to create program that will accept pupils data, count each pupil average mark than print pupils with average mark that less of 5, print whole class average mark and then write all pupils in format Second Name, First Name(only First Letter), average mark.
