@@ -21,7 +21,7 @@ for i in range(len(file_data)):
             tmp = int()
             for n in range(j, len(line_storage)):
                 tmp += int(line_storage[n])
-            tmp /= 12
+            tmp /= (len(line_storage) - j)
             pupils[i].append(round(tmp, 2))
 print("Учащиеся со средним баллом ниже 5:")
 class_middle_mark = float()
