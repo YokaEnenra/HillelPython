@@ -1,0 +1,2 @@
+There is first part of my fourteenth homework.
+My task was to create program with self writen class counter that will get min and max value and than count from min to max with method of class or return current counter value.
