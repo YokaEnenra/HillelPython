@@ -1,5 +1,5 @@
-from HomeWorkPackage import list_worker
-from HomeWorkPackage import different_func
+from home_work_package import list_worker
+from home_work_package import different_func
 
 import random
 
