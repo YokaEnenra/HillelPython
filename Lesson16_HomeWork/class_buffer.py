@@ -4,7 +4,7 @@ class Buffer:
         self.sequence = list()
 
     def add(self, *a):
-        for i in a[0]:
+        for i in a:
             self.sequence.append(i)
 
     def get_current_part(self):
@@ -39,7 +39,7 @@ if __name__ == "__main__":
                 for i in range(len(data_list)):
                     data_list[i] = float(data_list[i])
                 if '' not in data_list:
-                    first_buffer.add(data_list)
+                    first_buffer.add(*data_list)
                 result = first_buffer.get_current_part()
                 if result is None:
                     print("В последовательности меньше пяти чисел")
