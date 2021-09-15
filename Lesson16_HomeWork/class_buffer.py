@@ -6,16 +6,18 @@ class Buffer:
     def add(self, *a):
         for i in a:
             self.sequence.append(i)
+        return self.__sum_returner()
 
-    def get_current_part(self):
+    def __sum_returner(self):
         if len(self.sequence) > 4:
             curr_sum = 0
             for i in range(0, 5):
                 curr_sum += self.sequence[0]
                 self.sequence.pop(0)
             return curr_sum
-        # вернуть сохраненные в текущий момент элементы последовательности
-        # в порядке, в котором они были добавлены
+
+    def get_current_part(self):
+        return self.sequence
 
 
 class StopCommand(Exception):
@@ -38,11 +40,14 @@ if __name__ == "__main__":
                 data_list = data.split()
                 for i in range(len(data_list)):
                     data_list[i] = float(data_list[i])
+                result = None
                 if '' not in data_list:
-                    first_buffer.add(*data_list)
-                result = first_buffer.get_current_part()
+                    result = first_buffer.add(*data_list)
                 if result is None:
-                    print("В последовательности меньше пяти чисел")
+                    print("Текущие члены последовательности: ", end="")
+                    for i in first_buffer.get_current_part():
+                        print(i, end=" ")
+                    print()
                 else:
                     print("Сумма первых пяти чисел:", result)
 
